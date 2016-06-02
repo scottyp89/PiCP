@@ -19,7 +19,6 @@ rm -rf wordpress
 rm latest.tar.gz
 #move to site dir
 cd /var/www/html/sites/www/$site
-chown www-data:www-data * -R
 chmod 750 * -R
 #create wp config
 mv wp-config-sample.php wp-config.php
@@ -30,3 +29,4 @@ perl -pi -e "s/password_here/$dbpass/g" wp-config.php
 #create uploads folder and set permissions
 mkdir wp-content/uploads
 chmod 775 wp-content/uploads
+chown www-data:www-data * -R
