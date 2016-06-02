@@ -18,7 +18,11 @@ www-data ALL=NOPASSWD: /var/www/html/includes/bash/wordpress.sh
 # Permissions
 Not sure if Git copies permissions or not, I'm assuming not...
 Run the following commands:
+
 sudo chown pi:www-data /var/www/html -R
+
 sudo chmod 750 /var/www/html -R
+
 sudo chmod 770 /var/www/html/conf
+
 sudo chmod 770 /var/www/html/sites/www
