@@ -1,0 +1,3 @@
+ul.list-unstyled li:first-letter {
+	text-transform: uppercase;
+}
